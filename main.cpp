@@ -55,6 +55,8 @@ void mergesort(int * array, int left, int right) {
 	}
 	for (int i = 0; i < cur; i++)
 		array[i + left] = tmp[i];
+	
+	delete[] tmp;
 }
 
 int main() {
